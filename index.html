@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Odaklanma</title>
+</head>
+<body>
+    <nav>
+        <div class="navContainer">
+            <p>Şu ana kadar <span id="distractionCount">0</span> kere dikkatiniz dağıldı!</p>
+        </div>
+    </nav>
+    <div class="contentContainer">
+        <p>Ders çalışırken odaklanmak, başarıya giden yolda temel bir faktördür. 
+        Dikkat dağıtıcı unsurları minimize ederek, 
+        verimliliği artırır ve hedeflere daha hızlı ulaşmayı sağlar.  
+        Odaklanma, başarıya adım adım yaklaşmanın anahtarıdır.</p>
+    </div>
+    <div class="timeContainer">
+        <h3>Daha planlı çalışmak için zamanlayıcı kullanabilirsin.</h3>
+        <div class="timer" id="timer">00:00:00</div>
+        <div class="timerButtons">
+            <button onclick="startTimer(3600)">1 Saat</button>
+            <button onclick="startTimer(1800)">30 Dakika</button>
+            <button onclick="startTimer(900)">15 Dakika</button>
+        </div>
+    </div>
+    <div class="audioContainer">
+        <h3>Dikkat dağıtmayı ortadan kaldıran bazı ortam seslerini deneyebilirsin.</h3>
+        <button id="playButton"><i class="fas fa-play"></i></button>
+
+        <div class="audioControl" data-audio="audio1">
+            <i class="fas fa-dove fa-3x"></i>
+            <input type="range" min="0" max="1" step="0.01" value="0.5" class="volumeControl">
+        </div>
+
+        <div class="audioControl" data-audio="audio2">
+            <i class="fas fa-cloud-rain fa-3x"></i>
+            <input type="range" min="0" max="1" step="0.01" value="0" class="volumeControl">
+        </div>
+
+        <div class="audioControl" data-audio="audio3">
+            <i class="fas fa-fire fa-3x"></i>
+            <input type="range" min="0" max="1" step="0.01" value="0" class="volumeControl">
+        </div>
+        
+        <audio id="audio1" loop>
+            <source src="audio/bird.mp3" type="audio/mp3">
+            Tarayıcınız bu ses dosyasını desteklemiyor.
+        </audio>
+        <audio id="audio2" loop>
+            <source src="audio/rain.mp3" type="audio/mp3">
+            Tarayıcınız bu ses dosyasını desteklemiyor.
+        </audio>
+        <audio id="audio3" loop>
+            <source src="audio/fire.mp3" type="audio/mp3">
+            Tarayıcınız bu ses dosyasını desteklemiyor.
+        </audio>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

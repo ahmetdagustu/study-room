@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    color: #fff;
+    font-family: sans-serif;
+    background-image: url('pics/1.jpg');
+    background-size: cover;
+}
+
+nav {
+    background-color: rgb(184, 36, 36, 0.5);
+    color: #fff;
+}
+
+.navContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100%; 
+}
+
+.navContainer p {
+    font-weight: bold; 
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.navContainer p span {
+    color: #fff;
+    font-weight: bold; 
+    font-size: 1.3em;
+}
+
+.contentContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.3em;
+    box-sizing: border-box;
+}
+
+.contentContainer p {
+    max-width: 800px;
+    margin: 0;
+}
+
+.timeContainer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.timer {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.timerButtons button {
+    font-size: 18px;
+    margin: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+}
+
+.timerButtons button:hover {
+    background-color: #0056b3;
+}
+
+.audioContainer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.audioContainer button {
+    font-size: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+}
+
+.audioContainer button:hover {
+    background-color: #218838;
+}
+
+.audioControl {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.audioControl i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.volumeControl {
+    width: 200px;
+}
